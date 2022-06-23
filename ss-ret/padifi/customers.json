@@ -1,0 +1,49 @@
+[
+  {
+    "Name": "Customer 1",
+    "Adresses": [
+      {
+        "Id": "A",
+        "Name": "M\u00E4ntytie 7"
+      },
+      {
+        "Id": "B",
+        "Name": "Urheilukatu 23"
+      },
+      {
+        "Id": "X",
+        "Name": "Toimintakeidas  23"
+      }
+    ]
+  },
+  {
+    "Name": "Customer 2",
+    "Adresses": [
+      {
+        "Id": "C",
+        "Name": "Somerontie 1"
+      },
+      {
+        "Id": "D",
+        "Name": "Museokatu 23"
+      },
+      {
+        "Id": "X",
+        "Name": "Toimintakeidas  23"
+      }
+    ]
+  },
+  {
+    "Name": "Customer 3",
+    "Adresses": [
+      {
+        "Id": "E",
+        "Name": "N\u00E4kinkuja 6"
+      },
+      {
+        "Id": "X",
+        "Name": "Toimintakeidas  23"
+      }
+    ]
+  }
+]

@@ -1,0 +1,210 @@
+{
+  "Adress": [
+    {
+      "Id": "A",
+      "Name": "Mäntytie 7"
+    },
+    {
+      "Id": "B",
+      "Name": "Urheilukatu 23"
+    },
+    {
+      "Id": "C",
+      "Name": "Somerontie 1"
+    },
+    {
+      "Id": "D",
+      "Name": "Museokatu 23"
+    },
+    {
+      "Id": "E",
+      "Name": "Näkinkuja 6"
+    },
+    {
+      "Id": "X",
+      "Name": "Toimintakeidas"
+    }
+  ],
+  "Routes": [
+    {
+      "StartId": "A",
+      "FinishId": "A",
+      "Duration": 0
+    },
+    {
+      "StartId": "A",
+      "FinishId": "B",
+      "Duration": 246.3
+    },
+    {
+      "StartId": "A",
+      "FinishId": "C",
+      "Duration": 489.6
+    },
+    {
+      "StartId": "A",
+      "FinishId": "D",
+      "Duration": 389
+    },
+    {
+      "StartId": "A",
+      "FinishId": "E",
+      "Duration": 626.1
+    },
+    {
+      "StartId": "A",
+      "FinishId": "X",
+      "Duration": 516.9
+    },
+    {
+      "StartId": "B",
+      "FinishId": "A",
+      "Duration": 236.9
+    },
+    {
+      "StartId": "B",
+      "FinishId": "B",
+      "Duration": 0
+    },
+    {
+      "StartId": "B",
+      "FinishId": "C",
+      "Duration": 378.9
+    },
+    {
+      "StartId": "B",
+      "FinishId": "D",
+      "Duration": 316.6
+    },
+    {
+      "StartId": "B",
+      "FinishId": "E",
+      "Duration": 450.9
+    },
+    {
+      "StartId": "B",
+      "FinishId": "X",
+      "Duration": 402.5
+    },
+    {
+      "StartId": "C",
+      "FinishId": "A",
+      "Duration": 518.6
+    },
+    {
+      "StartId": "C",
+      "FinishId": "B",
+      "Duration": 414.2
+    },
+    {
+      "StartId": "C",
+      "FinishId": "C",
+      "Duration": 0
+    },
+    {
+      "StartId": "C",
+      "FinishId": "D",
+      "Duration": 516.9
+    },
+    {
+      "StartId": "C",
+      "FinishId": "E",
+      "Duration": 378.2
+    },
+    {
+      "StartId": "C",
+      "FinishId": "X",
+      "Duration": 602.8
+    },
+    {
+      "StartId": "D",
+      "FinishId": "A",
+      "Duration": 337
+    },
+    {
+      "StartId": "D",
+      "FinishId": "B",
+      "Duration": 265.9
+    },
+    {
+      "StartId": "D",
+      "FinishId": "C",
+      "Duration": 413.2
+    },
+    {
+      "StartId": "D",
+      "FinishId": "D",
+      "Duration": 0
+    },
+    {
+      "StartId": "D",
+      "FinishId": "E",
+      "Duration": 440.5
+    },
+    {
+      "StartId": "D",
+      "FinishId": "X",
+      "Duration": 234.7
+    },
+    {
+      "StartId": "E",
+      "FinishId": "A",
+      "Duration": 650.2
+    },
+    {
+      "StartId": "E",
+      "FinishId": "B",
+      "Duration": 485
+    },
+    {
+      "StartId": "E",
+      "FinishId": "C",
+      "Duration": 376.1
+    },
+    {
+      "StartId": "E",
+      "FinishId": "D",
+      "Duration": 496.2
+    },
+    {
+      "StartId": "E",
+      "FinishId": "E",
+      "Duration": 0
+    },
+    {
+      "StartId": "E",
+      "FinishId": "X",
+      "Duration": 328.9
+    },
+    {
+      "StartId": "X",
+      "FinishId": "A",
+      "Duration": 551.6
+    },
+    {
+      "StartId": "X",
+      "FinishId": "B",
+      "Duration": 462.6
+    },
+    {
+      "StartId": "X",
+      "FinishId": "C",
+      "Duration": 610.1
+    },
+    {
+      "StartId": "X",
+      "FinishId": "D",
+      "Duration": 236.9
+    },
+    {
+      "StartId": "X",
+      "FinishId": "E",
+      "Duration": 315.8
+    },
+    {
+      "StartId": "X",
+      "FinishId": "X",
+      "Duration": 0
+    }
+  ]
+}
