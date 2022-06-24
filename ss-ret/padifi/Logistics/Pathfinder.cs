@@ -8,8 +8,8 @@ namespace padifi.Logistics
 {
     public class Pathfinder
     {
-        private AdjacencyGraph<Adress, Edge<Adress>> _graph;
-        private FloydWarshallAllShortestPathAlgorithm<Adress, Edge<Adress>> fw;
+        private readonly AdjacencyGraph<Adress, Edge<Adress>> _graph;
+        private readonly FloydWarshallAllShortestPathAlgorithm<Adress, Edge<Adress>> fw;
 
         public Pathfinder(Map map)
         {
@@ -41,15 +41,16 @@ namespace padifi.Logistics
             fw.Compute();
         }
 
-
         public List<Adress> BuildRoute(Adress source, Adress target, List<Adress> extra, out double finalDistance)
         {
-            var result = new List<Adress>();
-            result.Add(_graph.Vertices.First(x => x.Id == source.Id));
+            var result = new List<Adress>
+            {
+                _graph.Vertices.First(x => x.Id == source.Id)
+            };
             finalDistance = 0;
 
             extra = extra.Distinct().ToList();
-            var pointsOfInterests = extra.Count();
+            var pointsOfInterests = extra.Count;
 
             while (pointsOfInterests > 0)
             {
@@ -75,8 +76,6 @@ namespace padifi.Logistics
                 foreach (var item in shortPath)
                 {
                     extra = extra.Where(x => x.Id != item.Source.Id && x.Id != item.Target.Id).ToList();
-
-                    // result.Add(item.Source);
                     result.Add(item.Target);
                 }
                 pointsOfInterests = extra.Count;
@@ -95,16 +94,14 @@ namespace padifi.Logistics
 
         private double CalcDistance(IEnumerable<Edge<Adress>> path)
         {
-            double ss = 0;
+            double result = 0;
 
             foreach (var item in path)
             {
                 fw.TryGetDistance(item.Source, item.Target, out double tmp);
-                ss += tmp;
+                result += tmp;
             }
-            return ss;
+            return result;
         }
     }
-
-
 }
