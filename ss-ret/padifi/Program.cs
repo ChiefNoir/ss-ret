@@ -4,7 +4,6 @@ using padifi.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 using System.Linq;
 
 namespace padifi
@@ -36,7 +35,7 @@ namespace padifi
                 var extra = item.Adresses.Where(x => x.Id != start.Id && x.Id != finish.Id).ToList();
 
                 var path = pathFinder.BuildRoute(start, finish, extra, out double finalDistance);
-                if(finalDistance < bestDistance)
+                if (finalDistance < bestDistance)
                 {
                     bestDistance = finalDistance;
                     bestPath = path;
@@ -81,9 +80,9 @@ namespace padifi
         }
     }
 
-    
 
-    
 
-    
+
+
+
 }

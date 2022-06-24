@@ -1,11 +1,8 @@
 ﻿using padifi.Models;
 using QuikGraph;
 using QuikGraph.Algorithms.ShortestPath;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace padifi.Logistics
 {
@@ -44,7 +41,7 @@ namespace padifi.Logistics
             fw.Compute();
         }
 
-        
+
         public List<Adress> BuildRoute(Adress source, Adress target, List<Adress> extra, out double finalDistance)
         {
             var result = new List<Adress>();
@@ -62,13 +59,13 @@ namespace padifi.Logistics
                 foreach (var item in extra)
                 {
                     fw.TryGetPath(result.Last(), _graph.Vertices.First(x => x.Id == item.Id), out IEnumerable<Edge<Adress>> path);
-                    if(path == null)
+                    if (path == null)
                     {
                         continue;
                     }
                     var dist = CalcDistance(path);
 
-                    if(dist < shortDist)
+                    if (dist < shortDist)
                     {
                         shortDist = dist;
                         shortPath = path;
@@ -109,5 +106,5 @@ namespace padifi.Logistics
         }
     }
 
-    
+
 }

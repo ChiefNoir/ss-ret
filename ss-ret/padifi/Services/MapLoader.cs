@@ -9,7 +9,7 @@ namespace padifi.Services
         public static Map FronFile(string filePath)
         {
             var json = File.ReadAllText(filePath);
-            return  JsonSerializer.Deserialize<Map>(json);
+            return JsonSerializer.Deserialize<Map>(json);
         }
     }
 }
